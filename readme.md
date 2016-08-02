@@ -19,9 +19,9 @@ Learning rate alpha auto-generated<br>
 	
 	x_vals = [9,3,7,4,2,1]
 	y_vals = [4,8,1,6,2,9]
-	data = np.array( [ x_vals , y_vals ] )
+	data = np.array([x_vals , y_vals])
 	m,b,r2 = tl.get_trendline(data) 	
-		# ( m,br,r2 = slope,intercept,r-squared )
+		# (m,b,r2 = slope,intercept,r-squared)
 		# optional kwarg 'prec' is max. delta-cost (lower boundary); 
 		# e.g., m,b,r2 = tl.get_trendline(data,prec=.01); default is prec = .0001
 	
@@ -33,8 +33,8 @@ Learning rate alpha auto-generated<br>
 	
 	plt.scatter(x_vals,y_vals)
 	
-	x = np.array( range( min(x_vals), max(x_vals)+1) )
-	plt.plot( x , m*x+b )
+	x = np.array(range(min(x_vals), max(x_vals)+1))
+	plt.plot(x,m*x+b)
 	
 	plt.show()
 
